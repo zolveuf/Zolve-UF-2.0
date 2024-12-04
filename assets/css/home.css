@@ -220,6 +220,8 @@ radio-buttons {
     color: #000000;
   }
   
+  @media (hover: hover) and (pointer: fine) {
+
 
   .grid-item::before {
     content: '';
@@ -237,16 +239,16 @@ radio-buttons {
 
 
 
-@media (hover: hover) and (pointer: fine) {
     .grid-item:hover {
         transform: translateY(-8px) scale(1.1) rotateX(5deg) rotateY(5deg);
         box-shadow: 0 12px 30px hsla(0, 0%, 0%, 0.2);
         background: linear-gradient(135deg, var(--color1), var(--white-color));
     }
-  }
+  
 
 .grid-item:hover::before {
     transform: translateX(100%) skewX(-25deg); /* Swipe effect */
+}
 }
 
 .grid-item span {

@@ -208,48 +208,58 @@ radio-buttons {
     overflow: hidden;
     cursor: pointer;
 }
-  
-  .grid-item h3 {
-    font-size: 1.25rem;
-    color: #000;
-    margin-bottom: 0.5rem;
-  }
-  
-  .grid-item p {
-    font-size: 0.938rem;
-    color: #000000;
-  }
-  
-  @media (hover: hover) and (pointer: fine) {
 
 
+
+.grid-item h3 {
+  font-size: 1.4rem; /* Slightly larger text size */
+  font-weight: bold; /* Make the heading bold */
+  color: #000; /* Strong black text color */
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Stronger shadow for more depth */
+}
+
+.grid-item p {
+  font-size: 1rem; /* Slightly larger text size */
+  font-weight: 500; /* Medium weight for emphasis */
+  color: #222; /* Darker gray for better contrast */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+@media (hover: hover) and (pointer: fine) {
   .grid-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-    transform: skewX(-25deg);
-    transition: transform 0.4s ease-in-out;
-    z-index: 1;
-    pointer-events: none;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+      transform: skewX(-25deg);
+      transition: transform 0.4s ease-in-out;
+      z-index: 1;
+      pointer-events: none;
+  }
+
+  .grid-item:hover {
+      transform: translateY(-8px) scale(1.1) rotateX(5deg) rotateY(5deg);
+      box-shadow: 0 12px 30px hsla(0, 0%, 0%, 0.2);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(50, 50, 50, 0.7)); /* Darker gradient overlay for better text visibility */
+      color: #fff; /* Change text color to white for hover state */
+  }
+
+  .grid-item:hover h3, 
+  .grid-item:hover p {
+      color: #fff; /* White text to pop on dark background */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Darker shadow for contrast */
+  }
+
+  .grid-item:hover::before {
+      transform: translateX(100%) skewX(-25deg); /* Swipe effect */
+  }
 }
 
 
-
-    .grid-item:hover {
-        transform: translateY(-8px) scale(1.1) rotateX(5deg) rotateY(5deg);
-        box-shadow: 0 12px 30px hsla(0, 0%, 0%, 0.2);
-        background: linear-gradient(135deg, var(--color1), var(--white-color));
-    }
-  
-
-.grid-item:hover::before {
-    transform: translateX(100%) skewX(-25deg); /* Swipe effect */
-}
-}
 
 .grid-item span {
     position: relative;
@@ -300,18 +310,6 @@ radio-buttons {
     }
   
 
-  .icon-box {
-    width: 3rem;
-    height: 3rem;
-    background-color: var(--color2);
-    color: var(--white-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px; /* Rounded square */
-    margin-bottom: 1rem;
-    font-size: 1.5rem; /* Icon size */
-  }
   
   
   

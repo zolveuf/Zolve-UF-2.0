@@ -321,7 +321,7 @@ radio-buttons {
         font-size: 2rem;
     }
 
-    }
+  }
 
 /*=============== CUSTOMERS ===============*/
 .projects h1 {
@@ -360,7 +360,7 @@ radio-buttons {
 
 
 .project__logo {
-  max-width: 60px;
+  max-width: 80px;
   margin-bottom: 1rem;
 }
 
@@ -379,6 +379,12 @@ radio-buttons {
 @media screen and (min-width: 1024px) {
   .projects__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .projects h1 {
+    font-size: 2rem;
   }
 }
 

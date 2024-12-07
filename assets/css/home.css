@@ -26,7 +26,6 @@
     align-items: center;
 }
 
-  
 .hero__text h1 {
     font-size: 2rem;
     color: var(--white-color);
@@ -47,17 +46,16 @@ br {
   
 .hero__image img {
     width: 100%;
-    max-width: 400px;  /* Ensures the image doesn't grow too large */
+    max-width: 400px;  
     height: auto;
     margin-top: 1rem;
 }
-  /* Responsive Styles */
-  @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
     .hero {
-        flex-direction: row; /* Switch to row layout for larger screens */
+        flex-direction: row; 
         text-align: left;
-        align-items: flex-start; /* Align items to the top of the container */
-        justify-content: space-between; /* Space out the text and image */
+        align-items: flex-start; 
+        justify-content: space-between; 
     }
     br {
         display: block;
@@ -87,8 +85,7 @@ br {
         height: auto;
         margin-top: 0; /* Remove extra margin */
     }
-  }
-
+}
 
 /*=============== PRODUCTS & SERVICES ===============*/
 .products-services {
@@ -104,16 +101,14 @@ br {
 .products-services p {
     margin-bottom: 2rem;
 }
-  
 
-  
-  .grid {
+.grid {
     display: grid;
     grid-template-columns: 1fr; /* Default for mobile */
     gap: 1.5rem;
-  }
+}
   
-  .grid-item {
+.grid-item {
     position: relative;
     background: linear-gradient(135deg, var(--white-color), var(--color2));
     border: 2px solid var(--color2);
@@ -124,8 +119,6 @@ br {
     overflow: hidden;
     cursor: pointer;
 }
-
-
 
 .grid-item h3 {
   font-size: 1.4rem; /* Slightly larger text size */
@@ -175,8 +168,6 @@ br {
   }
 }
 
-
-
 .grid-item span {
     position: relative;
     z-index: 2;
@@ -189,7 +180,6 @@ br {
 .grid-item:hover span {
     color: var(--white-color);
 }
-
 
 .icon-box img{
   width: 3rem;
@@ -204,10 +194,7 @@ br {
   font-size: 1.5rem;
 }
 
-  
-  
-  /* Responsive design for tablets */
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .grid {
       grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
     }
@@ -223,21 +210,20 @@ br {
         margin: 0 auto 1rem; /* Center horizontally and add bottom margin */
         font-size: 1.5rem;
     }
-  }
+}
   
-  /* Responsive design for desktops */
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .grid {
       grid-template-columns: repeat(4, 1fr); /* Four columns for larger screens */
     }
-  }
+}
 
-  @media screen and (max-width: 460px) {
+@media screen and (max-width: 460px) {
     .products-services h1 {
         font-size: 2rem;
     }
 
-  }
+}
 
 /*=============== CUSTOMERS ===============*/
 .projects h1 {
@@ -245,6 +231,7 @@ br {
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
 .projects {
   padding: 2rem 0;
   text-align: center;
@@ -266,6 +253,7 @@ br {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 @media (hover: hover) and (pointer: fine) {
   .project:hover {
     transform: translateY(-5px);
@@ -304,7 +292,6 @@ br {
 
 /*=============== ABOUT US ===============*/
 
-/* About Section */
 .about {
   padding: 2rem 0;
 }
@@ -363,7 +350,6 @@ br {
   margin-bottom: 1rem;
 }
 
-/* Responsive Layout */
 @media screen and (min-width: 768px) {
   .about__container {
     flex-direction: row;

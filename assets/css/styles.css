@@ -412,8 +412,11 @@ a {
   transition: color 0.3s;
 }
 
-.footer__links ul li a:hover {
-  color: var(--accent-color);
+
+@media (hover: hover) and (pointer: fine) {
+  .footer__links ul li a:hover {
+    color: var(--accent-color);
+  }
 }
 
 .footer__social {

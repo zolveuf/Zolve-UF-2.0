@@ -177,8 +177,11 @@ br {
     transition: color 0.4s ease;
 }
 
-.grid-item:hover span {
+
+@media (hover: hover) and (pointer: fine) {
+  .grid-item:hover span {
     color: var(--white-color);
+}
 }
 
 .icon-box img{

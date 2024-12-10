@@ -110,7 +110,6 @@ br {
   
 .grid-item {
     position: relative;
-    background: linear-gradient(135deg, var(--white-color), var(--color2));
     border: 2px solid var(--color2);
     padding: 1.5rem;
     border-radius: 12px;
@@ -136,53 +135,15 @@ br {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .grid-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 200%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-      transform: skewX(-25deg);
-      transition: transform 0.4s ease-in-out;
-      z-index: 1;
-      pointer-events: none;
-  }
 
   .grid-item:hover {
     transform: translateY(-5px);
-      box-shadow: 0 12px 30px hsla(0, 0%, 0%, 0.2);
-      background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(50, 50, 50, 0.7)); /* Darker gradient overlay for better text visibility */
-      color: #fff; /* Change text color to white for hover state */
-  }
-
-  .grid-item:hover h3, 
-  .grid-item:hover p {
-      color: #fff; /* White text to pop on dark background */
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Darker shadow for contrast */
-  }
-
-  .grid-item:hover::before {
-      transform: translateX(100%) skewX(-25deg); /* Swipe effect */
   }
 }
 
-.grid-item span {
-    position: relative;
-    z-index: 2;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--color1);
-    transition: color 0.4s ease;
-}
 
 
-@media (hover: hover) and (pointer: fine) {
-  .grid-item:hover span {
-    color: var(--white-color);
-}
-}
+
 
 .icon-box img{
   width: 3rem;

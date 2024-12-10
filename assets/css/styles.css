@@ -81,6 +81,11 @@ a {
     transition: color 0.3s ease;
 }
 
+.nav__link .btn {
+  border: transparent;
+  background-color: var(--color1);
+}
+
 .btn::after {
     content: '';
     position: absolute;
@@ -370,7 +375,7 @@ a {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background: linear-gradient(135deg, var(--color1), var(--color2));
+  background: linear-gradient(180deg, var(--color1), var(--black-color));
   color: var(--white-color);
   padding: 3rem 1rem;
   font-family: var(--body-font);

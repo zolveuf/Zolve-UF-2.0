@@ -152,6 +152,19 @@ br {
   font-size: 1.5rem;
 }
 
+.icon-box {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color2);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: 0 auto 1rem; /* Center horizontally and add bottom margin */
+  font-size: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     .grid {
       grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */

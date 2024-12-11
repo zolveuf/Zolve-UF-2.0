@@ -48,6 +48,7 @@ br {
     width: 100%;
     max-width: 400px;  
     height: auto;
+    aspect-ratio: 16/12;
     margin-top: 1rem;
 }
 @media screen and (min-width: 750px) {

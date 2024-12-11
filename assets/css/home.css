@@ -113,6 +113,7 @@ br {
     position: relative;
     border: 2px solid var(--color2);
     padding: 1.5rem;
+    background-color: var(--color1);
     border-radius: 12px;
     box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.1);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -123,16 +124,14 @@ br {
 .grid-item h3 {
   font-size: 1.4rem; /* Slightly larger text size */
   font-weight: bold; /* Make the heading bold */
-  color: #000; /* Strong black text color */
+  color: var(--white-color); /* Strong black text color */
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Stronger shadow for more depth */
 }
 
 .grid-item p {
   font-size: 1rem; /* Slightly larger text size */
   font-weight: 500; /* Medium weight for emphasis */
-  color: #222; /* Darker gray for better contrast */
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  color: var(--white-color); /* Darker gray for better contrast */
 }
 
 @media (hover: hover) and (pointer: fine) {

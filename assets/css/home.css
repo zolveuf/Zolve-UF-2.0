@@ -141,15 +141,9 @@ br {
   }
 }
 
-
-
-
-
 .icon-box img{
   width: 3rem;
   height: 3rem;
-  background-color: var(--color2);
-  color: var(--white-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,6 +226,7 @@ br {
 
 .project__image {
   max-width: 100%;
+  height: auto;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
 }
@@ -271,10 +266,12 @@ br {
   position: relative;
   width: 100%;
   max-width: 500px;
+  height: auto;
 }
 
 .about__image img {
   width: 100%;
+  height: auto;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

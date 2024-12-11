@@ -223,7 +223,6 @@ br {
   max-width: 80px;
   height: auto;
   margin-bottom: 1rem;
-  aspect-ratio: 14/2;
 }
 
 .project__image {
@@ -231,7 +230,6 @@ br {
   height: auto;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
-  aspect-ratio: 1.78;
 }
 
 @media screen and (min-width: 768px) {

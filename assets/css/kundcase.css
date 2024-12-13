@@ -63,9 +63,10 @@
     padding: 0;
     background-image: url('/assets/img/kundcase-aurorastad-img.webp');
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     box-sizing: border-box;
+    background-position: center;
+    position: relative; 
 }
 
 .equalkidz {

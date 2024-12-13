@@ -147,7 +147,7 @@ br {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 0 auto 1rem; /* Center horizontally and add bottom margin */
   font-size: 1.5rem;
 }
@@ -160,7 +160,7 @@ br {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 12px;
   margin: 0 auto 1rem; /* Center horizontally and add bottom margin */
   font-size: 1.5rem;
 }
@@ -177,7 +177,7 @@ br {
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 8px;
+        border-radius: 12px;
         margin: 0 auto 1rem; /* Center horizontally and add bottom margin */
         font-size: 1.5rem;
     }
@@ -218,7 +218,7 @@ br {
 .project {
   background-color: var(--white-color);
   border: 1px solid var(--grey-color);
-  border-radius: 0.5rem;
+  border-radius: 12px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -242,7 +242,7 @@ br {
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -286,7 +286,7 @@ br {
 .about__image img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -296,7 +296,7 @@ br {
   right: 1rem;
   background-color: var(--color1);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   column-gap: .25rem;
   font-size: 1.6rem;
@@ -309,7 +309,7 @@ br {
 
 .about__text {
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 12px;
   background: linear-gradient(135deg, var(--color1), var(--color2));
   color: var(--white-color);
   text-align: center;

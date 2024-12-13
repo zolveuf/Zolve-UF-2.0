@@ -453,3 +453,25 @@ body {
   }
 }
 
+/*=============== HERO 2 ===============*/
+.hero__2 {
+  width: 100%;
+  height: 35vh;
+  background-image: url('/assets/img/martin.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.hero__2__content {
+  position: absolute;
+  top: 22%;
+  font-size: 1.5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  max-width: 80%;
+}
+
+

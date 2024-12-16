@@ -42,7 +42,7 @@
   }
   
   .about__team__photo {
-    border-radius: 50%;
+    border-radius: 90%;
     width: 13rem;
     height: 13rem;
     object-fit: cover;

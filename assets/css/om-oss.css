@@ -38,7 +38,7 @@
   }
 
   .about__team__item a{
-    color: var(--grey-color);
+    color: #555;
   }
   
   .about__team__photo {

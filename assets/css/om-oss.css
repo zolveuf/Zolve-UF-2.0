@@ -1,0 +1,61 @@
+/*=============== ABOUT US SECTION ===============*/
+.about {
+    padding: 2rem 0;
+  }
+  
+  .about__heading {
+    font-size: 3rem;
+    color: var(--color1);
+    margin-bottom: 30px;
+    align-self: center;
+  }
+  
+  .about__text {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .about__subheading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--font-semi-bold);
+    margin: 2rem 0 1rem;
+    color: var(--color2);
+  }
+  
+  .about__team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about__team__item {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .about__team__item a{
+    color: var(--grey-color);
+  }
+  
+  .about__team__photo {
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 1rem;
+  }
+  
+  .viktig__info__box {
+    margin-bottom: 0.2rem;
+  }
+  @media screen and (min-width: 560px) {
+    .about__team {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+}

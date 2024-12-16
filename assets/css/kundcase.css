@@ -10,6 +10,12 @@
     padding: 10px;
 }
 
+.service-info-computer {
+    display: block;
+}
+.service-info-computer img {
+    display: none;
+}
 .service-info-text h1 {
     font-size: 3rem;
     color: var(--color1);
@@ -21,7 +27,6 @@
     font-size: 1.4rem;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 1rem;
 }
 
 .mobile-invisible {
@@ -53,32 +58,30 @@
     width: 20px;
 }
 
-.service-info-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/assets/img/kundcase-aurorastad-img.webp');
-    background-size: cover;
-    background-attachment: fixed;
-    box-sizing: border-box;
-    background-position: center;
-    position: relative; 
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.equalkidz {
-    background-image: url('/assets/img/kundcase-equalkidz-img.webp');
-}
-
-
 .quote {
     background-color: #fff;
     border-radius: 12px;
     padding: 1rem 0.25rem 1rem 1rem;
-    margin: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--color1);
     letter-spacing: 0.1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .service-info-computer {
+        display: flex;
+    }
+    .flex-reverse {
+        flex-direction: row-reverse;
+    }
+    .service-info-computer img {
+        display: block;
+        height: 48%;
+        width: 48%;
+    }
+    .computer-invisible {
+        display: none;
+    }
+}
+
 

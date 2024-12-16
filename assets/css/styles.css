@@ -150,7 +150,13 @@ body {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.2em;
+  transition: all ease-in-out 0.1s;
   }
+  @media (hover: hover) and (pointer: fine) {
+    .nav__logo:hover {
+      transform: scale(1.05);
+    }
+}
 
   .nav__toggle {
   position: relative;
@@ -457,11 +463,12 @@ body {
 .hero__2 {
   width: 100%;
   height: 35vh;
-  background-image: url('/assets/img/martin.webp');
+  background-image: url('/assets/img/hero.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
+
 .hero__2__content {
   position: absolute;
   top: 22%;
@@ -471,7 +478,13 @@ body {
   text-align: center;
   color: white;
   padding: 1rem;
-  max-width: 80%;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero__2__content {
+    top: 25%;
+  }
 }
 
 

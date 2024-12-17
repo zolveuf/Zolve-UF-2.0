@@ -14,7 +14,8 @@
     display: block;
 }
 .service-info-computer img {
-    display: none;
+    display: block;
+    width: 90%;
 }
 .service-info-text h1 {
     font-size: 3rem;

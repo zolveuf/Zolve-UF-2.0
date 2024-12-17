@@ -45,7 +45,7 @@ br {
 }
   
 .hero__image img {
-    width: 100%;
+    width: 400%;
     max-width: 400px;  
     height: auto;
     aspect-ratio: 1.26;
@@ -81,8 +81,7 @@ br {
     }
 
     .hero__image img {
-        width: 100%;
-        max-width: 500px; /* Adjust size as needed */
+        max-width: 800px; /* Adjust size as needed */
         height: auto;
         margin-top: 0; /* Remove extra margin */
     }

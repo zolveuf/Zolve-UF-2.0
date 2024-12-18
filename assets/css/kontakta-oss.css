@@ -1,0 +1,87 @@
+/*=============== FORM STYLING ===============*/
+.contact-form {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2rem auto;
+    font-family: var(--body-font);
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: var(--color1);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    color: var(--color1);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    color: var(--black-color);
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    background-color: #fff;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 0.8rem 1rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*=============== RESPONSIVE DESIGN ===============*/
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+}
